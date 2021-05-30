@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        function queue12(arr, x){            // queue : First_in First_Out
+            arr.push(x);
+            z = arr.shift()
+            return z
+        }
+        // function true1(z){
+        //     if (z === 10){                  // if '==' then (10 == '10') is a True statement 
+        //         return console.log('True!!!')       //else if  '==='(10 === '10') is a False statement
+        //     }
+        //     return console.log('False!!!')
+        // }
+        // xx = '10'
+        // true1(xx)
+        z=prompt('Enter a number to add into queue :')
+        var my_arr = [10,20,30,40,50];
+        console.log('b4 : '+my_arr);
+        console.log(queue12(my_arr,parseInt(z)));       //parseInt is used convert string to INT
+        console.log('after : '+my_arr); 
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var njGlobal = 10
+        function ab(){
+            var nj1Global = 20
+        }
+        function cd(){
+            var res = ''
+            if(typeof njGlobal != 'any'){
+                res +='njGlobal : '+njGlobal
+            }
+            // if(typeof nj1Global != null){
+            //     res +='nj1Global : '+nj1Global
+            // }
+            console.log('res is : '+res)
+        }
+        ab()
+        cd()
+    </script>
+</body>
+</html>            

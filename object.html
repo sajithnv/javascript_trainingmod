@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            'a':'apple',
+            'apple_count': 6 ,
+            'm':'MAngo',
+            'mango_count': [115-45-4+50-115]
+        }
+        console.log(obj)
+        console.log(typeof(obj))
+        console.log(obj.a +' : '+ obj.apple_count)  // 1
+        console.log(obj.m +' : '+ obj.mango_count)  // 1
+        console.log(obj['m'])       // 2
+                // two ways to access the values from the object
+        console.log('obj b4 : ',obj)
+        obj.m = 'mulbury'   //can change 'values'
+        obj.a = 'annn'
+        console.log('obj after : ',obj)
+        // adding new properties to the object 'obj'
+        obj.c_name = 'Arun'
+        obj['age'] = 25
+        console.log(obj)
+        // delete a property from object obj
+        delete obj.age
+        delete obj['apple_count']
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        xx = prompt('Enter a num for mul_table : ')
+        for (var i = 1;i <= 10;i++ ){
+            console.log(i +' * '+xx+' = '+(i*xx))
+        }
+        // 1 -10 odd numbers
+        var all = []
+        var odd = []
+        var even = []
+        for (var i=1;i<=10;i++){
+            if(i % 2 == 1){
+                odd.push(i)
+            }else if(i % 2 == 0){
+                even.push(i)
+            }
+            all.push(i)
+        }
+        console.log('All Numbers : '+all)
+        console.log('Odd Numbers : '+odd)
+        console.log('Even Numbers : '+even)
+    </script>
+</body>
+</html>

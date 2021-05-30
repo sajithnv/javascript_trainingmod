@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = ['abc',10,20]
+        console.log('array1 is :'+arr1)
+        arr1.push(30)
+        console.log('New array1 is :'+arr1)
+        //converting to multidiamentional array
+        arr1.push([20,50]) // push() function is used to add a new element or a new array inside the given array : ( Position -1 : LAST)
+        console.log('New Converted Multidiamentional array1 is :'+arr1)
+        var ab = arr1[4][1]
+        console.log('zzz :'+ab)
+        var arr2 = [20,'abc',45,[20,48],35,[88]]
+        console.log(arr2[3][1])// to print 48
+        console.log(arr2[arr2.length-1])// to print [88]
+        console.log(arr2[arr2.length-1][0])// to print 88
+        console.log(arr2[5][0])// to print 88
+        //pop : removing last element from the given array
+        var arr3 = [10,'abced',55]
+        console.log('Before pop() : ' +arr3)
+        arr3.pop()
+        console.log('After pop() : ' +arr3) // op: [10,'abced']
+        // shift and unshift
+        var arr4 = ['abcff',25,'kkk']
+        console.log('Before shift() : ' +arr4)
+        arr4.shift()    // shift() fuction used to remove the first element from the array
+        console.log('After shift() & before unshift() : ' +arr4)
+        arr4.unshift(['new_element',10])      // unshift() fuction used to add an element in first position ( [0] ) of the array
+        console.log('After unshift(\'new_element\') : ' +arr4)
+        var ab='20'
+        console.log(typeof ab)
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The number is :<h1 id="abc"></h1></h1>
+    <script>
+        function def(qq){
+            var x = 0
+            switch(qq){
+                case 1:
+                    x += 5
+                    break;
+                case 2:
+                    x += 10
+                    break; 
+                case 3:
+                case 4:    
+                    x += 15
+                    break;
+                }
+            return x;
+        }    
+        xx=prompt('Enter a num between 1 and 4 :')  
+        while (xx < 1 || xx > 4) {
+            alert('<<<<<  ERROR  >>>>  Enter a num between 1 and 4 !!!')
+            xx=prompt('Enter a num between 1 and 4 :') 
+        }
+        xmm = def(parseInt(xx))
+        console.log(xmm)  
+        document.getElementById('abc').innerHTML = xmm
+    </script>
+</body>
+</html>
