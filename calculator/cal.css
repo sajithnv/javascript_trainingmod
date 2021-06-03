@@ -1,0 +1,44 @@
+.main-div{
+    background-color: darkslategrey;
+    border-radius: 5%;
+    border: 2px solid;
+    width: 30%;
+    margin-left: 35%;
+    height: 420px;
+    margin-top: 50px;
+}
+#display{
+    font-size: x-large;
+    width: 90%;
+    margin: 20px;
+    height: 56px;
+    border-radius: 27%;
+    pointer-events: none;
+    background-color: black;
+    color: white;
+}
+.sub-div{
+    width: 89%;
+    height: 294px;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 9px;
+}
+.sub-div-in{
+    width: 66%;
+    height: 236px;
+    background-color: rgb(84, 102, 102);
+    margin-top: -237px;
+    margin-left: 21px;
+}
+.btn-set1{
+    font-size: x-large;
+    margin: 12px;
+    width: 61px;
+    height: 34px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+}

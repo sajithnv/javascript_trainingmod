@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Entered Number Is : <big style="color: blue;"  id="f_num"></big></h1>
+    <h1>The Number is : <Big style="color: blue;"  id="s_num"></Big></h1>
+    <h1 style="color: red;" id="data"></h1>
+    <script>
+        function fun(xx){
+            ax = Math.floor(Math.random() * 51)
+            if(ax == xx){
+                return 'You Guessed It...Awesome'
+            }else if (ax + 1 ==xx ||ax - 1 == xx){
+                return 'Just Miss!!!'
+            }else{
+                return '!!!! You Loose It !!!!'
+            }
+        }
+        xx = prompt('Guess a Number Between 0 and 50')
+        dat = fun(xx)
+        console.log(dat)
+        document.getElementById('f_num').innerHTML=xx
+        document.getElementById('s_num').innerHTML=ax
+        document.getElementById('data').innerHTML=dat
+    </script>
+</body>
+</html>

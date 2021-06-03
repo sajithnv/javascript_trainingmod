@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // profile lookup from array_of_objects
+    var arrobj = [
+        {
+            'Name':'Sajith',
+            'Last_Name':'NV',
+            'Age': 25,
+            'Likes':['python(Django),JavaScript']
+        },
+        {
+            'Name':'Ajith',
+            'Last_Name':'V',
+            'Age': 45,
+            'Likes':['nil']
+        },
+        {
+            'Name':'Jith',
+            'Last_Name':'N',
+            'Age': 34,
+            'Likes':['hacking']
+        }
+    ]
+        function my_profile(name,property){
+            for (var i = 0;i < arrobj.length; i++){
+                if(arrobj[i].Name === name){
+                    alert('<<<<  Data Found  >>>>')
+                    if (property == 'all'){
+                    return arrobj[i]
+                    }
+                    return arrobj[i][property] || "No Such property !!!"
+                }
+            }
+            return "No Such Contacts !!!"
+        }
+        a = prompt('Enter a Registered Name : ')
+        b = prompt('Properties are : Name ,Last_Name,Age,Likes...SELECT ONE...')
+        var data = my_profile(a,b);
+        console.log(data)
+    </script>
+</body>
+</html>

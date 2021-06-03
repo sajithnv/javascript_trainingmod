@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        function equal(a,b){
+            // Normal_Case
+            /* if (a === b){
+                 return 'equal'
+             }else{
+                 return 'not_equal'
+             }*/
+             //using Ternary_operator
+             return a === b ? 'Equal' : 'Not_Equal'
+        }
+        x = prompt('Enter first Number: ')
+        y = prompt('Enter second Number: ')
+        console.log(equal(x,y))
+        // Ternary_Operator in Nested_ 'else_if' statement
+        function number(num){
+            return num > 0 ? 'Positive Number' : num < 0 ? 'Negative Number' : 'Zero'
+        }
+        console.log(number(10))
+        console.log(number(0))
+        console.log(number(-10))
+        </script>
+</body>
+</html>

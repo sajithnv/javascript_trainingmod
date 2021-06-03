@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Normal function
+        function con(arr1,arr2){
+            return arr1.concat(arr2)
+        }
+        console.log(con([10,12],[5]))
+        // function without name
+        var fun1 = function(arr1,arr2){
+            return arr1.concat(arr2)
+        }
+        console.log(fun1([10,12],[8  ]))
+        // arrow function
+        var fun = (arr1,arr2) => arr1.concat(arr2)
+        console.log(fun([1,2],[1]))
+        let x = 10
+        let y = 12
+        console.log('x : '+x,'y : '+y)
+        term = x
+        x = y
+        y = term
+        console.log('x : '+x,'y : '+y)
+
+    </script>
+</body>
+</html>
